@@ -165,18 +165,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 📸 Screenshots
 
-Add screenshots of the following pages inside a `screenshots/` folder:
-
-- Home Page
-- Behavioral Questionnaire
-- Behavioral Result
-- Facial Image Upload
-- Final Result
-- Wellness Guidance
-
----
 
 ## 📋 Requirements
 
