@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Autism Prediction System</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<!-- ===========================
+        NAVBAR
+=========================== -->
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+
+    <div class="container">
+
+        <!-- Left Side Title -->
+        <a class="navbar-brand fw-bold fs-3 text-primary" href="/">
+
+            <i class="bi bi-heart-pulse-fill me-2"></i>
+
+            Early Autism Prediction
+
+        </a>
+
+        <!-- Right Side Navigation -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end"
+             id="navbarNav">
+
+            <ul class="navbar-nav align-items-center">
+
+                <li class="nav-item me-3">
+                    <a class="nav-link fw-semibold" href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item me-3">
+                    <a class="nav-link fw-semibold" href="#services">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item me-3">
+                    <a class="nav-link fw-semibold" href="#how-it-works">
+                        How It Works
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/questionnaire"
+                       class="btn btn-primary rounded-pill px-4">
+
+                        <i class="bi bi-play-circle-fill me-2"></i>
+
+                        Start Screening
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ===========================
+        HERO SECTION
+=========================== -->
+
+<section class="hero" id="about">
+
+<div class="container">
+
+<div class="row align-items-center g-5">
+
+<div class="col-lg-6">
+
+<span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill mb-3">
+
+Early Screening System
+
+</span>
+
+<h1 class="display-3 fw-bold mt-3">
+
+Early 
+
+<span class="text-primary">
+
+Autism
+
+</span>
+
+Detection
+
+</h1>
+
+<p class="lead mt-4">
+
+Our intelligent screening platform combines
+behavioral assessment and facial image analysis
+to support early autism screening and encourage
+timely professional consultation.
+
+</p>
+
+<div class="mt-4">
+
+<a href="/questionnaire"
+
+class="btn btn-primary btn-lg rounded-pill px-5 shadow">
+
+Start Screening
+
+<i class="bi bi-arrow-right-circle-fill ms-2"></i>
+
+</a>
+
+</div>
+
+<div class="row mt-5 text-center">
+
+<div class="col-md-4 mb-4">
+
+<div class="feature-card py-3">
+
+<i class="bi bi-lightning-charge-fill text-warning fs-1"></i>
+
+<h5 class="mt-3">
+
+Quick Screening
+
+</h5>
+
+<p class="text-muted mb-0">
+
+Complete the behavioral and facial screening in just a few minutes.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<div class="feature-card py-3">
+
+<i class="bi bi-shield-check text-success fs-1"></i>
+
+<h5 class="mt-3">
+
+Secure & Private
+
+</h5>
+
+<p class="text-muted mb-0">
+
+Uploaded information is used only for screening within the application.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<div class="feature-card py-3">
+
+<i class="bi bi-heart-pulse-fill text-primary fs-1"></i>
+
+<h5 class="mt-3">
+
+Early Support
+
+</h5>
+
+<p class="text-muted mb-0">
+
+Early screening helps families seek timely professional guidance.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="col-lg-6 text-center">
+
+<img
+
+src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=900"
+
+class="img-fluid hero-image rounded-4 shadow-lg"
+
+alt="Healthcare">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+        WHY CHOOSE US
+=========================== -->
+
+<section class="py-5" id="services">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="fw-bold">
+
+Why Choose Our System?
+
+</h2>
+
+<p class="text-muted">
+
+AI-assisted autism screening for faster preliminary assessment.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+<i class="bi bi-ui-checks-grid"></i>
+
+</div>
+
+<h4>
+
+Behavioral Assessment
+
+</h4>
+
+<p>
+
+A scientifically designed questionnaire helps identify behavioral patterns associated with autism.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+<i class="bi bi-camera2"></i>
+
+</div>
+
+<h4>
+
+Facial Image Analysis
+
+</h4>
+
+<p>
+
+Deep Learning powered facial screening using a ResNet50 model trained on autism facial datasets.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+<i class="bi bi-heart-pulse-fill"></i>
+
+</div>
+
+<h4>
+
+Wellness Guidance
+
+</h4>
+
+<p>
+
+Provides wellness recommendations and suggested next steps after completing the screening.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===========================
+        HOW IT WORKS
+=========================== -->
+
+<section class="py-5 bg-light" id="how-it-works">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+
+                How It Works
+
+            </h2>
+
+            <p class="text-muted">
+
+                Complete your screening in four simple steps.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card h-100">
+
+                    <div class="feature-icon">
+
+                        <i class="bi bi-ui-checks-grid"></i>
+
+                    </div>
+
+                    <h5>
+
+                        Step 1
+
+                    </h5>
+
+                    <h4>
+
+                        Behavioral Assessment
+
+                    </h4>
+
+                    <p>
+
+                        Answer a simple questionnaire about the child's daily behaviour.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card h-100">
+
+                    <div class="feature-icon">
+
+                        <i class="bi bi-clipboard2-pulse"></i>
+
+                    </div>
+
+                    <h5>
+
+                        Step 2
+
+                    </h5>
+
+                    <h4>
+
+                        AI Screening
+
+                    </h4>
+
+                    <p>
+
+                        Our behavioral machine learning model evaluates the responses.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card h-100">
+
+                    <div class="feature-icon">
+
+                        <i class="bi bi-camera2"></i>
+
+                    </div>
+
+                    <h5>
+
+                        Step 3
+
+                    </h5>
+
+                    <h4>
+
+                        Facial Analysis
+
+                    </h4>
+
+                    <p>
+
+                        Upload a clear facial image for additional AI-assisted screening.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card h-100">
+
+                    <div class="feature-icon">
+
+                        <i class="bi bi-heart-pulse-fill"></i>
+
+                    </div>
+
+                    <h5>
+
+                        Step 4
+
+                    </h5>
+
+                    <h4>
+
+                        Wellness Guidance
+
+                    </h4>
+
+                    <p>
+
+                        Receive personalized wellness recommendations and next steps.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        PROJECT HIGHLIGHTS
+=========================== -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=900"
+
+                     class="img-fluid rounded-4 shadow-lg">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2 mb-3">
+
+                    Smart Healthcare Solution
+
+                </span>
+
+                <h2 class="fw-bold mb-4">
+
+                    Why Early Screening Matters
+
+                </h2>
+
+                <p class="text-muted">
+
+                    Early identification of autism can help families access professional evaluation,
+                    therapies, and educational support at the right time.
+
+                </p>
+
+                <div class="mt-4">
+
+                    <div class="d-flex mb-3">
+
+                        <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+
+                        <div>
+
+                            <h5>Behavioral Screening</h5>
+
+                            <p class="text-muted mb-0">
+
+                                Questionnaire powered by Machine Learning.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex mb-3">
+
+                        <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+
+                        <div>
+
+                            <h5>Facial Image Analysis</h5>
+
+                            <p class="text-muted mb-0">
+
+                                Deep Learning model based on ResNet50.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex">
+
+                        <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+
+                        <div>
+
+                            <h5>Wellness Recommendations</h5>
+
+                            <p class="text-muted mb-0">
+
+                                Personalized guidance after screening.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        CALL TO ACTION
+=========================== -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="result-card text-center">
+
+            <h2 class="fw-bold">
+
+                Begin Your Screening Today
+
+            </h2>
+
+            <p class="text-muted mt-3">
+
+                Complete the behavioral assessment and facial screening in just a few minutes.
+
+            </p>
+
+            <a href="/questionnaire"
+
+               class="btn btn-primary btn-lg rounded-pill px-5 mt-3">
+
+                Start Screening
+
+                <i class="bi bi-arrow-right-circle-fill ms-2"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        FOOTER
+=========================== -->
+
+<footer>
+
+    <div class="container text-center">
+
+        <h4 class="mb-3">
+
+            <i class="bi bi-heart-pulse-fill me-2"></i>
+
+            Autism Prediction System
+
+        </h4>
+
+        <p>
+
+            AI-powered behavioral assessment, facial image analysis,
+            and wellness guidance for early autism screening.
+
+        </p>
+
+        <hr class="border-light opacity-25">
+
+        <small>
+
+            © 2026 Autism Prediction System |
+            Flask • XGBoost • ResNet50 • TensorFlow
+
+        </small>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
