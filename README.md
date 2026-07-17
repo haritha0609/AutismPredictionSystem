@@ -33,43 +33,6 @@ The system also generates AI-powered wellness guidance and recommends nearby aut
 
 ---
 
-# 🖥️ Screenshots
-
-## Home Page
-
-(Add Screenshot Here)
-
----
-
-## Behavioral Questionnaire
-
-(Add Screenshot Here)
-
----
-
-## Facial Image Upload
-
-(Add Screenshot Here)
-
----
-
-## Prediction Result
-
-(Add Screenshot Here)
-
----
-
-## AI Wellness Guidance
-
-(Add Screenshot Here)
-
----
-
-## Hospital Recommendation
-
-(Add Screenshot Here)
-
----
 
 # 🏗️ System Architecture
 
