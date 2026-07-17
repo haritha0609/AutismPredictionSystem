@@ -54,11 +54,11 @@ def predict_behavior(data):
     print("Probability:", probability)
     print("Classes    :", model.classes_)
     print("==============================\n")
-
+  
     if prediction == 1:
-        result = "Autism Detected"
-    else:
         result = "No Autism Detected"
+    else:
+        result = "Autism Detected"
 
     return {
         "prediction": prediction,
